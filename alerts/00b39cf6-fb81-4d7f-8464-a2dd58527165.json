@@ -1,0 +1,18 @@
+{
+  "alert_id": "00b39cf6-fb81-4d7f-8464-a2dd58527165",
+  "headline": "Flood Alert for Varanasi",
+  "severity": "Extreme",
+  "urgency": "Immediate",
+  "certainty": "Observed",
+  "village": "Varanasi",
+  "lat": 25.4401,
+  "lon": 85.9955,
+  "radius": 10.0,
+  "instruction": "Critical water level 33.93m detected at Varanasi. Exceeds safety mark by 24.94m. Move to designated high ground immediately!",
+  "description": "Hydrodynamic prediction simulation breach at Varanasi. Forecast surge cresting in 0.0 hours.",
+  "status": "Actual",
+  "timestamp": "20 Sep 2026, 16:23 IST",
+  "short_text": "FLOOD ALERT: Varanasi - Hydrodynamic prediction simulation breach at Varan. Critical water level 33.93m detected at Varanasi.. [16:23 IST]",
+  "xml_file": "alert_Varanasi_00b39cf6.xml",
+  "sender": "flood-authority@cap-mesh-gateway.local"
+}

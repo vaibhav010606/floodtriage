@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>52fb066a-b44f-45e0-9640-1a30666639d5</identifier>
+  <sender>flood-authority@cap-mesh-gateway.local</sender>
+  <sent>2026-09-20T16:33:01+05:30</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>en-IN</language>
+    <category>Met</category>
+    <event>Flood</event>
+    <responseType>Prepare</responseType>
+    <urgency>Immediate</urgency>
+    <severity>Extreme</severity>
+    <certainty>Observed</certainty>
+    <expires>2026-09-21T04:33:01+05:30</expires>
+    <headline>Flood Alert for Varanasi, Ganges Basin, India</headline>
+    <description>Hydrodynamic prediction simulation breach at Varanasi, Ganges Basin, India. Forecast surge cresting in 0.0 hours.</description>
+    <instruction>Critical water level 6.41m detected at Varanasi, Ganges Basin, India. Exceeds safety mark by 0.00m. Move to designated high ground immediately!</instruction>
+    <area>
+      <areaDesc>Varanasi, Ganges Basin, India</areaDesc>
+      <circle>25.44,85.996 10.0</circle>
+    </area>
+  </info>
+</alert>

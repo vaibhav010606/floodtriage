@@ -1,0 +1,18 @@
+{
+  "alert_id": "0c794087-3677-4bc1-b420-2b642810df3c",
+  "headline": "Flood Alert for Varanasi, Ganges Basin, India",
+  "severity": "Extreme",
+  "urgency": "Immediate",
+  "certainty": "Observed",
+  "village": "Varanasi, Ganges Basin, India",
+  "lat": 25.44,
+  "lon": 85.996,
+  "radius": 10.0,
+  "instruction": "Critical water level 6.41m detected at Varanasi, Ganges Basin, India. Exceeds safety mark by 0.00m. Move to designated high ground immediately!",
+  "description": "Hydrodynamic prediction simulation breach at Varanasi, Ganges Basin, India. Forecast surge cresting in 0.0 hours.",
+  "status": "Actual",
+  "timestamp": "20 Sep 2026, 16:27 IST",
+  "short_text": "FLOOD ALERT: Varanasi, Ganges Basin, India - Hydrodynamic prediction simulation breach at Varan. Critical water level 6.41m detected at Varanasi, G. [16:27 IST]",
+  "xml_file": "alert_Varanasi,_Ganges_Basin,_India_0c794087.xml",
+  "sender": "flood-authority@cap-mesh-gateway.local"
+}

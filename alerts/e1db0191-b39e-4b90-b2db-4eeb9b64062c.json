@@ -1,0 +1,18 @@
+{
+  "alert_id": "e1db0191-b39e-4b90-b2db-4eeb9b64062c",
+  "headline": "Flood Alert for Resolving place name...",
+  "severity": "Extreme",
+  "urgency": "Immediate",
+  "certainty": "Observed",
+  "village": "Resolving place name...",
+  "lat": 25.46284598570664,
+  "lon": 74.79581968397882,
+  "radius": 10.0,
+  "instruction": "Critical water level 22.47m detected at Resolving place name.... Exceeds safety mark by 13.61m. Move to designated high ground immediately!",
+  "description": "Hydrodynamic prediction simulation breach at Resolving place name.... Forecast surge cresting in 0.0 hours.",
+  "status": "Actual",
+  "timestamp": "20 Sep 2026, 17:18 IST",
+  "short_text": "FLOOD ALERT: Resolving place name... - Hydrodynamic prediction simulation breach at Resol. Critical water level 22.47m detected at Resolving. [17:18 IST]",
+  "xml_file": "alert_Resolving_place_name..._e1db0191.xml",
+  "sender": "flood-authority@cap-mesh-gateway.local"
+}

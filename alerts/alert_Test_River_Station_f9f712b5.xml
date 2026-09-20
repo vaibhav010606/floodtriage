@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>f9f712b5-ed05-4484-919d-3d0b6340f0a5</identifier>
+  <sender>flood-authority@cap-mesh-gateway.local</sender>
+  <sent>2026-09-20T16:26:59+05:30</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>en-IN</language>
+    <category>Met</category>
+    <event>Flood</event>
+    <responseType>Prepare</responseType>
+    <urgency>Immediate</urgency>
+    <severity>Extreme</severity>
+    <certainty>Observed</certainty>
+    <expires>2026-09-21T04:26:59+05:30</expires>
+    <headline>Flood Alert for Test River Station</headline>
+    <description>Hydrodynamic prediction simulation breach at Test River Station. Forecast surge cresting in 0.0 hours.</description>
+    <instruction>Critical water level 12.50m detected at Test River Station. Exceeds safety mark by 4.50m. Move to designated high ground immediately!</instruction>
+    <area>
+      <areaDesc>Test River Station</areaDesc>
+      <circle>26.0,90.0 10.0</circle>
+    </area>
+  </info>
+</alert>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>dc380909-c4ba-4e88-bb4a-71e8cda7eb6a</identifier>
+  <sender>flood-authority@cap-mesh-gateway.local</sender>
+  <sent>2026-09-20T17:31:09+05:30</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>en-IN</language>
+    <category>Met</category>
+    <event>Flood</event>
+    <responseType>Prepare</responseType>
+    <urgency>Immediate</urgency>
+    <severity>Extreme</severity>
+    <certainty>Observed</certainty>
+    <expires>2026-09-21T05:31:09+05:30</expires>
+    <headline>Flood Alert for Location (26.61°N, 79.09°E)</headline>
+    <description>Hydrodynamic prediction simulation breach at Location (26.61°N, 79.09°E). Forecast surge cresting in 0.0 hours.</description>
+    <instruction>Critical water level 24.82m detected at Location (26.61°N, 79.09°E). Exceeds safety mark by 15.90m. Move to designated high ground immediately!</instruction>
+    <area>
+      <areaDesc>Location (26.61°N, 79.09°E)</areaDesc>
+      <circle>26.61113759123933,79.08635415079291 10.0</circle>
+    </area>
+  </info>
+</alert>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  Common Alerting Protocol (CAP) v1.2 Example
+  This file serves as a reference for generating fully compliant CAP 1.2 XML alerts.
+-->
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+    <!-- UNIQUE IDENTIFIER: Must be unique across all alerts sent by this sender -->
+    <identifier>FLOOD-ALERT-MAJULI-2026-0920-001</identifier>
+    <!-- SENDER: The identifier of the sender, typically an email address or domain -->
+    <sender>flood-authority@cap-mesh-gateway.local</sender>
+    <!-- SENT TIME: Standard ISO 8601 format with timezone -->
+    <sent>2026-09-20T08:30:00+05:30</sent>
+    <!-- STATUS: 'Test' is used for testing. Change to 'Actual' for real deployments. -->
+    <status>Test</status>
+    <!-- MSG TYPE: Defines the nature of the message (Alert, Update, Cancel, etc.) -->
+    <msgType>Alert</msgType>
+    <!-- SCOPE: Denotes the intended audience (Public, Restricted, Private) -->
+    <scope>Public</scope>
+    
+    <!-- INFO BLOCK: Contains the actual details of the event. Can have multiple <info> blocks for different languages or audiences. -->
+    <info>
+        <!-- LANGUAGE: The language of the content in this <info> block -->
+        <language>en-IN</language>
+        <!-- CATEGORY: The subject domain of the event. 'Met' is for Meteorological. -->
+        <category>Met</category>
+        <!-- EVENT: The human-readable text denoting the type of the subject event -->
+        <event>Flood Warning</event>
+        <!-- RESPONSE TYPE: The type of action recommended for the target audience -->
+        <responseType>Evacuate</responseType>
+        <!-- URGENCY: How soon the event requires action (Immediate, Expected, Future, Past, Unknown) -->
+        <urgency>Immediate</urgency>
+        <!-- SEVERITY: How severe the event is (Extreme, Severe, Moderate, Minor, Unknown) -->
+        <severity>Extreme</severity>
+        <!-- CERTAINTY: How confident the sender is in the occurrence of the event (Observed, Likely, Possible, Unlikely, Unknown) -->
+        <certainty>Observed</certainty>
+        <!-- SENDER NAME: Human-readable name of the agency or person sending the alert -->
+        <senderName>Flood Alert Mesh Gateway</senderName>
+        <!-- HEADLINE: A brief human-readable headline. -->
+        <headline>EXTREME FLOOD WARNING: Majuli Island — Brahmaputra rising dangerously</headline>
+        <!-- DESCRIPTION: A detailed description of the event. -->
+        <description>The Brahmaputra river levels have crossed the extreme danger mark upstream of Majuli Island due to continuous heavy rainfall in the catchment areas. Immediate inundation of low-lying areas across the island is expected within the next 2 hours.</description>
+        <!-- INSTRUCTION: Actionable instructions for the public. -->
+        <instruction>Evacuate to higher ground immediately. Avoid riverbanks and do not attempt to cross flooded roads. Follow directions from local emergency responders.</instruction>
+        <!-- EFFECTIVE TIME: When the alert becomes effective -->
+        <effective>2026-09-20T08:30:00+05:30</effective>
+        <!-- EXPIRES TIME: When the alert is no longer active (set to 12 hours after sent time here) -->
+        <expires>2026-09-20T20:30:00+05:30</expires>
+        <!-- CONTACT: Who to contact for emergency assistance or further information -->
+        <contact>Disaster Control Room: 1070 | Emergency Helpline: 112</contact>
+
+        <!-- AREA BLOCK: Defines the geographic area of the alert -->
+        <area>
+            <!-- AREA DESC: A human-readable description of the affected area -->
+            <areaDesc>Majuli Island and surrounding riverine areas, Jorhat District, Assam</areaDesc>
+            <!-- POLYGON: Defines the area using a series of space-separated lat,lon pairs. The first and last pair must be identical to close the polygon. -->
+            <polygon>26.98,94.12 27.02,94.20 26.95,94.25 26.88,94.15 26.98,94.12</polygon>
+            <!-- CIRCLE: Defines the area as a circle (lat,lon,radius_in_km) -->
+            <circle>26.95,94.17,10.0</circle>
+            <!-- GEOCODE: A geographically-based code describing the area. LGD codes for India. -->
+            <geocode>
+                <valueName>LGD_STATE_CODE</valueName>
+                <value>18</value>
+            </geocode>
+            <geocode>
+                <valueName>LGD_DISTRICT_CODE</valueName>
+                <value>242</value>
+            </geocode>
+        </area>
+    </info>
+</alert>

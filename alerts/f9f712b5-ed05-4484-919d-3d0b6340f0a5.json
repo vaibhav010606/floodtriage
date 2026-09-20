@@ -1,0 +1,18 @@
+{
+  "alert_id": "f9f712b5-ed05-4484-919d-3d0b6340f0a5",
+  "headline": "Flood Alert for Test River Station",
+  "severity": "Extreme",
+  "urgency": "Immediate",
+  "certainty": "Observed",
+  "village": "Test River Station",
+  "lat": 26.0,
+  "lon": 90.0,
+  "radius": 10.0,
+  "instruction": "Critical water level 12.50m detected at Test River Station. Exceeds safety mark by 4.50m. Move to designated high ground immediately!",
+  "description": "Hydrodynamic prediction simulation breach at Test River Station. Forecast surge cresting in 0.0 hours.",
+  "status": "Actual",
+  "timestamp": "20 Sep 2026, 16:26 IST",
+  "short_text": "FLOOD ALERT: Test River Station - Hydrodynamic prediction simulation breach at Test. Critical water level 12.50m detected at Test River. [16:26 IST]",
+  "xml_file": "alert_Test_River_Station_f9f712b5.xml",
+  "sender": "flood-authority@cap-mesh-gateway.local"
+}

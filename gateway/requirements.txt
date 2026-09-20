@@ -1,0 +1,7 @@
+cryptography>=41.0.0
+pyyaml>=6.0
+bleak>=0.21.0
+lz4>=4.3.0
+# Captive Portal dependencies
+dnslib>=0.9.23
+flask>=3.0.0

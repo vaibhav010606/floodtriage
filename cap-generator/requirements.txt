@@ -1,0 +1,3 @@
+# Core dependencies: none (uses Python stdlib xml.etree.ElementTree)
+# Optional: schema validation
+capvalidator>=0.5.0

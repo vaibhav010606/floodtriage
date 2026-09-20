@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>⚠️ EMERGENCY ALERT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: {{ bg_color }};
+            color: #FFFFFF;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Pulsing warning icon */
+        .warning-icon {
+            font-size: 4em;
+            animation: pulse 1.5s ease-in-out infinite;
+            margin-top: 20px;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.2); opacity: 0.8; }
+        }
+
+        .severity-badge {
+            display: inline-block;
+            padding: 6px 20px;
+            border: 2px solid #FFFFFF;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin: 15px 0;
+        }
+
+        h1 {
+            font-size: 1.8em;
+            font-weight: 900;
+            margin: 10px 0;
+            line-height: 1.2;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+
+        .headline {
+            font-size: 1.3em;
+            font-weight: 700;
+            margin: 10px 0 5px 0;
+            padding: 0 10px;
+        }
+
+        .area {
+            font-size: 1.1em;
+            margin: 5px 0;
+            opacity: 0.9;
+        }
+
+        .divider {
+            width: 60%;
+            max-width: 300px;
+            height: 2px;
+            background: rgba(255,255,255,0.4);
+            margin: 20px auto;
+        }
+
+        .instruction-box {
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 10px 15px;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .instruction-label {
+            font-size: 0.8em;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            opacity: 0.8;
+            margin-bottom: 8px;
+        }
+
+        .instruction-text {
+            font-size: 1.2em;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .description {
+            font-size: 0.95em;
+            line-height: 1.5;
+            margin: 15px 15px;
+            max-width: 500px;
+            opacity: 0.9;
+        }
+
+        .safe-zone-btn {
+            display: inline-block;
+            padding: 16px 40px;
+            background: #FFFFFF;
+            color: {{ bg_color }};
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1.1em;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: transform 0.2s;
+        }
+
+        .safe-zone-btn:active {
+            transform: scale(0.95);
+        }
+
+        .timestamp {
+            font-size: 0.75em;
+            opacity: 0.6;
+            margin-top: 15px;
+            letter-spacing: 1px;
+        }
+
+        .source {
+            font-size: 0.7em;
+            opacity: 0.5;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+
+        .connection-info {
+            font-size: 0.65em;
+            opacity: 0.4;
+            margin-top: 10px;
+        }
+
+        /* Stripe pattern at top for extra visibility */
+        .hazard-stripe {
+            width: 100%;
+            height: 8px;
+            background: repeating-linear-gradient(
+                -45deg,
+                #FFFFFF,
+                #FFFFFF 10px,
+                transparent 10px,
+                transparent 20px
+            );
+            opacity: 0.4;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        /* Auto-refresh meta for captive portal popup windows */
+        .app-download {
+            font-size: 0.8em;
+            opacity: 0.7;
+            margin: 15px 0;
+            padding: 10px;
+            border: 1px dashed rgba(255,255,255,0.3);
+            border-radius: 8px;
+            max-width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hazard-stripe"></div>
+
+    <div class="warning-icon">⚠️</div>
+
+    <div class="severity-badge">{{ severity }} — {{ urgency }}</div>
+
+    <h1>{{ title }}</h1>
+
+    <p class="headline">{{ headline }}</p>
+
+    <p class="area">📍 {{ area_desc }}</p>
+
+    <div class="divider"></div>
+
+    <div class="instruction-box">
+        <div class="instruction-label">⚡ What You Must Do</div>
+        <div class="instruction-text">{{ instruction }}</div>
+    </div>
+
+    {% if description %}
+    <p class="description">{{ description }}</p>
+    {% endif %}
+
+    <a href="/safe-zones" class="safe-zone-btn">🗺️ View Safe Zones</a>
+
+    <div class="app-download">
+        📱 For real-time mesh alerts, install <strong>AAPDA SETU</strong> — works even without internet.
+    </div>
+
+    <div class="timestamp">🕒 Alert issued: {{ timestamp }}</div>
+    <div class="source">Source: {{ sender }} via AAPDA SETU Emergency Gateway</div>
+    <div class="connection-info">Devices reached: {{ device_count }}</div>
+
+    <!-- Auto-refresh every 30 seconds to pick up new alerts -->
+    <script>
+        setTimeout(function() { location.reload(); }, 30000);
+    </script>
+</body>
+</html>

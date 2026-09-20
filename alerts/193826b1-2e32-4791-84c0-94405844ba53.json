@@ -1,0 +1,18 @@
+{
+  "alert_id": "193826b1-2e32-4791-84c0-94405844ba53",
+  "headline": "Flood Alert for Location (26.61°N, 79.09°E)",
+  "severity": "Extreme",
+  "urgency": "Immediate",
+  "certainty": "Observed",
+  "village": "Location (26.61°N, 79.09°E)",
+  "lat": 26.61113759123933,
+  "lon": 79.08635415079291,
+  "radius": 10.0,
+  "instruction": "Critical water level 24.82m detected at Location (26.61°N, 79.09°E). Exceeds safety mark by 15.90m. Move to designated high ground immediately!",
+  "description": "Hydrodynamic prediction simulation breach at Location (26.61°N, 79.09°E). Forecast surge cresting in 0.0 hours.",
+  "status": "Actual",
+  "timestamp": "20 Sep 2026, 17:32 IST",
+  "short_text": "FLOOD ALERT: Location (26.61°N, 79.09°E) - Hydrodynamic prediction simulation breach at Locat. Critical water level 24.82m detected at Location (. [17:32 IST]",
+  "xml_file": "alert_Location_(26.61°N,_79.09°E)_193826b1.xml",
+  "sender": "flood-authority@cap-mesh-gateway.local"
+}

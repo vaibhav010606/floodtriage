@@ -1,0 +1,18 @@
+{
+  "alert_id": "c00d6cb3-8bee-4c92-9fb5-96746f3897f5",
+  "headline": "Flood Alert for Farakka (Ganges River Basin)",
+  "severity": "Severe",
+  "urgency": "Immediate",
+  "certainty": "Observed",
+  "village": "Farakka (Ganges River Basin)",
+  "lat": 26.0,
+  "lon": 90.0,
+  "radius": 10.0,
+  "instruction": "Water level reached 14.21m (Critical Threshold: 10.5m). Immediate evacuation ordered!",
+  "description": "Automated hydrodynamic simulation breach detected at Farakka. Inflow surge calculated in 5.0h.",
+  "status": "Actual",
+  "timestamp": "20 Sep 2026, 16:14 IST",
+  "short_text": "FLOOD ALERT: Farakka (Ganges River Basin) - Automated hydrodynamic simulation breach detected. Water level reached 14.21m (Critical Threshold: 10. [16:14 IST]",
+  "xml_file": "alert_Farakka_(Ganges_River_Basin)_c00d6cb3.xml",
+  "sender": "flood-authority@cap-mesh-gateway.local"
+}
